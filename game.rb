@@ -1,14 +1,22 @@
 require 'bundler'
+require 'sinatra'
 Bundler.require
 require './lib/throw.rb'
 
 module Game
   class RPS_App < Sinatra::Application
 
+    get '/' do
+      erb :index
+    end
+
+    get '/throw' do
+      erb :index
+    end
+
     get '/throw/:type'do
-      user_move = "#{params[:type]}"
-      new_game = Throw.new(user_move)
-      my_computer = new_game.comp_move
+      @user_move = "#{params[:type]}"
+      new_game = Throw.new("#{params[:type]}")
       erb :throw
     end
 
