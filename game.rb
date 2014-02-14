@@ -5,7 +5,7 @@ require './lib/throw.rb'
 module Game
   class RPS_App < Sinatra::Application
 
-    get '/' do
+    get '/throw' do
       erb :index
     end
 

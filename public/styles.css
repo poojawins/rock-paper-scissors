@@ -14,13 +14,20 @@ body {
   cursor: pointer;
 }
 
-h1 {
+.picks {
   font-size: 50px;
+  display: inline-block;
+  padding: 20px;
 }
 
-h2 {
-  font-size: 30px;
+div.winner {
+  font-size: 80px;
 }
+
+h1 {
+  font-size: 80px;
+}
+
 
 #play_again {
   font-size: 22px;

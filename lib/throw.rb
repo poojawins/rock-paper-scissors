@@ -5,7 +5,7 @@ class Throw
 
   def initialize(user_move)
     @user_move = user_move
-    @comp_move = ["rock", "paper", "scissor"].sample
+    @comp_move = ["rock", "paper", "scissors"].sample
   end
 
   def computer_move

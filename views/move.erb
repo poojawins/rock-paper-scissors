@@ -1,5 +1,23 @@
 
-<h2>You picked <%= @user_move %>.</h2>
-<h2>The computer picked <%= @comp_move %>.</h2>
-<h2>You <%= @winner %>.</h2>
-<a id="play_again" href="/">Play Again!</a>
+
+
+<div id="container">
+
+  <div class="picks">
+    <h2>You picked <%= @user_move %>.</h2>
+    <img src="/img/<%= @user_move %>.jpg" />
+  </div>
+
+  <div class="picks">
+    <h2>The computer picked <%= @comp_move %>.</h2>
+    <img src="/img/<%= @comp_move %>.jpg" />
+  </div>
+</div>
+
+<br />
+<br />
+ <div class="winner">
+    <h2>You <%= @winner %>!</h2>
+  </div>
+
+<a id="play_again" href="/throw">Play Again!</a>
