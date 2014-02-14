@@ -13,7 +13,7 @@ module Game
       @user_move = "#{params[:type]}"
       new_game = Throw.new("#{params[:type]}")
       @comp_move = new_game.computer_move
-      @winner = new_game.winner
+      @winner = new_game.who_wins
       erb :move
     end
 

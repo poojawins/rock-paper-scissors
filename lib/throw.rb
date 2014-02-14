@@ -13,7 +13,6 @@ class Throw
   end
 
   def who_wins
-    winner = nil
     winner_hash = {
       :rock => {:rock=> "tie", :paper=> "lose", :scissors=> "win", :lizard=> "win", :spock=> "lose"},
       :paper => {:rock=> "win", :paper=> "tie", :scissors=> "lose", :lizard=> "lose", :spock=> "win"},
@@ -21,17 +20,7 @@ class Throw
       :lizard => {:rock=> "lose", :paper=> "win", :scissors=> "lose", :lizard=> "tie", :spock=> "win"},
       :spock => {:rock=> "win", :paper=> "lose", :scissors=> "win", :lizard=> "lose", :spock=> "tie"}
     }
-    winner_hash.each do |user, comp_hash|
-      if @user_move == user
-        comp_hash.each do |comp, win_lose|
-          if @comp_move == comp
-            winner = winner_hash[user][comp]
-          end
-        end
-      end
-      return winner
-    end
-    
+    return winner_hash[@user_move.to_sym][@comp_move.to_sym]
   end
 
 end
