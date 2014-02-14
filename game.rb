@@ -1,5 +1,4 @@
 require 'bundler'
-require 'sinatra'
 Bundler.require
 require './lib/throw.rb'
 
@@ -17,6 +16,7 @@ module Game
     get '/throw/:type'do
       @user_move = "#{params[:type]}"
       new_game = Throw.new("#{params[:type]}")
+      winner = new_game.winner
       erb :throw
     end
 

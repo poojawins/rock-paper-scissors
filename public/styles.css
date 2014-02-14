@@ -1,0 +1,27 @@
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+}
+
+body {
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  padding: 20px;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+#play_again {
+  font-size: 22px;
+}

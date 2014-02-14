@@ -23,8 +23,9 @@ class Throw
           end
         end
       end
+      return winner
     end
-    return winner
+    
   end
 
 end
