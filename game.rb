@@ -20,9 +20,3 @@ module Game
 
   end
 end
-
-# before '/*'do
-    #   unless params[:type] =="rock" || params[:type] =="paper" || params[:type] =="scissor"
-    #     redirect '/beta'
-    #   end
-    # end

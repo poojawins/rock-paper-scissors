@@ -16,20 +16,18 @@ body {
 }
 
 .picks {
-  font-size: 65px;
   display: inline-block;
   padding: 20px;
-}
-
-div.winner {
-  font-size: 80px;
 }
 
 h1 {
   font-size: 65px;
 }
 
+h2 {
+  font-size: 35px;
+}
 
 #play_again {
-  font-size: 22px;
+  font-size: 28px;
 }

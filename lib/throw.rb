@@ -1,7 +1,7 @@
 class Throw
 
   attr_reader :user_move
-  attr_accessor :comp_move, :winner
+  attr_accessor :comp_move
 
   def initialize(user_move)
     @user_move = user_move
