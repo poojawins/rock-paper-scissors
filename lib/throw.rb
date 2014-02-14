@@ -8,6 +8,10 @@ class Throw
     @comp_move = ["rock", "paper", "scissor"].sample
   end
 
+  def computer_move
+    return @comp_move
+  end
+
   def who_wins
     winner = nil
     winner_hash = {

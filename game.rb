@@ -9,16 +9,14 @@ module Game
       erb :index
     end
 
-    get '/throw' do
-      erb :index
-    end
-
     get '/throw/:type'do
       @user_move = "#{params[:type]}"
       new_game = Throw.new("#{params[:type]}")
-      winner = new_game.winner
-      erb :throw
+      @comp_move = new_game.computer_move
+      @winner = new_game.winner
+      erb :move
     end
+
 
   end
 end
