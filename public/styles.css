@@ -6,6 +6,7 @@
 
 body {
   text-align: center;
+  background-color: #C0C0C0;
 }
 
 .button {
@@ -15,7 +16,7 @@ body {
 }
 
 .picks {
-  font-size: 50px;
+  font-size: 65px;
   display: inline-block;
   padding: 20px;
 }
@@ -25,7 +26,7 @@ div.winner {
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 65px;
 }
 
 
