@@ -1,19 +1,23 @@
+<div class="winner">
+  <h1>You <%= @winner %>!</h1>
+</div>
+<br />
+<br />
 
-  <div class="winner">
-    <h1>You <%= @winner %>!</h1>
-  </div>
-  <br />
-  <br />
+<div class="picks">
+  <h2>You picked <%= @user_move %>.</h2>
+  <img src="/img/<%= @user_move %>.jpg" />
+</div>
 
-  <div class="picks">
-    <h2>You picked <%= @user_move %>.</h2>
-    <img src="/img/<%= @user_move %>.jpg" />
-  </div>
-
-  <div class="picks">
-    <h2>The computer picked <%= @comp_move %>.</h2>
-    <img src="/img/<%= @comp_move %>.jpg" />
-  </div>
-  <br />
-
-  <a id="play_again" href="/">Play Again!</a>
+<div class="picks">
+  <h2>The computer picked <%= @comp_move %>.</h2>
+  <img src="/img/<%= @comp_move %>.jpg" />
+</div>
+<br />
+// <script>
+//   var r = confirm("Play again?");
+//     if (r == true) {
+//       document.location.href="/";
+//     }
+// </script>
+<a id="play_again" href="/">Play Again!</a>
