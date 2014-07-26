@@ -5,11 +5,10 @@ class Throw
 
   def initialize(user_move)
     @user_move = user_move
-    @comp_move = ["rock", "paper", "scissors", "lizard", "spock"].sample
   end
 
   def computer_move
-    return @comp_move
+    @comp_move = ["rock", "paper", "scissors", "lizard", "spock"].sample
   end
 
   def who_wins
@@ -24,4 +23,3 @@ class Throw
   end
 
 end
-

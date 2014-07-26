@@ -3,6 +3,7 @@ Bundler.require
 require './lib/throw.rb'
 
 module Game
+  
   class RPS_App < Sinatra::Application
 
     get '/' do
@@ -16,7 +17,7 @@ module Game
       @winner = new_game.who_wins
       erb :move
     end
-
-
+    
   end
+
 end
