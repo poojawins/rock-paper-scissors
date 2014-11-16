@@ -10,7 +10,7 @@ body {
 
 .button {
   display: inline-block;
-  padding: 20px;
+  padding: 20px 30px;
   cursor: pointer;
 }
 
@@ -29,4 +29,13 @@ h2 {
 
 #play_again {
   font-size: 28px;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+}
+
+footer {
+  padding-bottom: 10px;
 }
